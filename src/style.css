@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-pink-50;
+  }
+}
+
+@utility section-contrast {
+  @apply bg-pink-300 text-pink-50;
+}
+
+@utility content-container {
+  @apply max-w-3xl mx-auto;
+}
+
+@utility section-title {
+  @apply text-6xl uppercase;
+}
+
+@utility section-subtitle {
+  @apply text-3xl uppercase font-thin;
+}
+
+@utility app-table {
+  @apply text-2xl;
+
+  td {
+    @apply p-4 relative;
+  }
+
+  .favorite {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url('./assets/hearth.svg');
+    background-repeat: no-repeat;
+  }
+}

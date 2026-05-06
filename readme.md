@@ -1,0 +1,1 @@
+Приглашение на свадьбу как здесь https://lletters.ru/design9, Только с использованием tailwind и anime-js 
