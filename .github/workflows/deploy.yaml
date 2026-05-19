@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node (if needed)
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -32,7 +32,7 @@ jobs:
       - name: Install & build (Node)
         run: |
           pnpm install --frozen-lockfile
-          pnpm run build --if-present
+          pnpm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
