@@ -20,21 +20,14 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup Node (if needed)
-        if: ${{ exists('package.json') }}
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
       - name: Install & build (Node)
-        if: ${{ exists('package.json') }}
         run: |
           npm ci
           npm run build --if-present
-
-      - name: Fallback message (no build step)
-        if: ${{ !exists('package.json') }}
-        run: |
-          echo "No package.json found — ensure $PUBLISH_DIR contains files to publish."
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
