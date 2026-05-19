@@ -5,43 +5,49 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>wedding</title>
+  <title>Свадьба Ксюши и Максима</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <header class="h-screen min-h-max">
+  <header class="h-screen min-h-max flex items-center">
     <div class="content-container text-center">
       <div></div>
-      <div class="section-subtitle">08/08/2026</div>
-      <div class="font-semibold text-6xl text-pink-300">Алексей & Ксения</div>
+      <div class="section-subtitle">22/08/2026</div>
+      <div class="font-semibold section-title text-6xl md:text-9xl text-pink-deep">Ксюша & Максим</div>
+      <div>
+        <img src="" alt="Фото Ксюши и Максима" class="min-h-60">
+      </div>
     </div>
   </header>
 
   <!-- Приветствие -->
-  <section>
+  <section class="section">
     <div class="content-container text-center">
       <h1 class="section-title">У нас свадьба!</h1>
-      <p>Дорогие и любимые, мы приглашаем вас на вечеринку в честь нашей свадьбы. <br> С нетерпением ждём встречи!</p>
+      <p class="section-text mt-10 md:mt-16">Дорогие гости! <br> Приглашаем вас разделить с нами этот важный день.</p>
     </div>
   </section>
 
   <!-- Календарь -->
-  <section class="min-h-screen">
+  <section class="min-h-screen section">
     <div class="content-container text-center">
       <h1 class="section-title">Дата торжества</h1>
       <p class="section-subtitle">август | 2026</p>
-      <div>
+      <div class="mt-6 md:mt-10">
         <table class="app-table mx-auto">
           <thead>
             <tr>
-              <td>пн</td>
-              <td>вт</td>
-              <td>ср</td>
-              <td>чт</td>
-              <td>пт</td>
-              <td>сб</td>
-              <td>вс</td>
+              <th>пн</th>
+              <th>вт</th>
+              <th>ср</th>
+              <th>чт</th>
+              <th>пт</th>
+              <th>сб</th>
+              <th>вс</th>
             </tr>
           </thead>
           <tbody>
@@ -61,7 +67,6 @@
               <td>6</td>
               <td>7</td>
               <td>
-                <span class="favorite"></span>
                 8
               </td>
               <td>9</td>
@@ -81,7 +86,9 @@
               <td>19</td>
               <td>20</td>
               <td>21</td>
-              <td>22</td>
+              <td class="favorite">
+                22
+              </td>
               <td>23</td>
             </tr>
             <tr>
@@ -109,16 +116,104 @@
   </section>
 
   <!-- Место (карта или фото) -->
-  <section class="section-contrast min-h-screen"></section>
+  <section class="section-contrast min-h-screen section section-vertical">
+    <div class="content-container text-center">
+      <h2 class="section-title">Место проведения</h2>
+      <p class="mt-4 section-text">Наш праздник пройдет в шатре "Золотой фазан"<br>По адресу: улица Землячки, д. 92, к.
+        4</p>
+      <div><a href="https://yandex.ru/maps/-/CPs9fA7H" target="_blank" class="action-button">Открыть карту</a></div>
+    </div>
+  </section>
 
   <!-- Расписание -->
-  <section class="min-h-screen"></section>
+  <section class="min-h-screen section">
+    <div class="content-container text-center">
+      <h2 class="section-title">Тайминг дня</h2>
+
+      <div class="mx-auto">
+        <div>
+          <div></div>
+          <div class="timing-time">15:00</div>
+          <div class="timing-title">Сбор гостей</div>
+        </div>
+        <div class="timing-line"></div>
+        <div>
+          <div></div>
+          <div class="timing-time">15:40</div>
+          <div class="timing-title">Церемония</div>
+        </div>
+        <div class="timing-line"></div>
+        <div>
+          <div></div>
+          <div class="timing-time">16:10</div>
+          <div class="timing-title">Праздничный банке</div>
+        </div>
+        <div class="timing-line"></div>
+        <div>
+          <div></div>
+          <div class="timing-time">23:00</div>
+          <div class="timing-title">Завершение вечера</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Пожелания -->
+
+  <section class="min-h-screen section section-contrast">
+    <div class="content-container text-center py-6 md:py-10">
+      <h2 class="section-title">Пожелания</h2>
+      <p class="section-text mt-4">Ваши пожелания в конверте станут отличным подарком и помогут исполнить наши мечты.
+      </p>
+    </div>
+  </section>
 
   <!-- Дресс-код -->
-  <section class="min-h-screen"></section>
+  <section class="min-h-screen section">
+    <div class="content-container text-center">
+      <h2 class="section-title">Дресс-код</h2>
+
+      <p class="section-text mt-20">Мы будем
+        рады, если в своих нарядах вы поддержите
+        естественную и романтичную атмосферу дня.</p>
+
+      <div class="flex items-center gap-x-1 justify-center mt-6">
+        <div class="rounded-full w-16 h-16 bg-[#fcc9dc]"></div>
+        <div class="rounded-full w-16 h-16 bg-[#fbe7b9]"></div>
+        <div class="rounded-full w-16 h-16 bg-[#d8eaa6]"></div>
+        <div class="rounded-full w-16 h-16 bg-[#689230]"></div>
+      </div>
+
+      <p class="section-text mt-6">Благодарим Вас за внимание к таким важным для нас деталям!</p>
+    </div>
+  </section>
+
+  <!-- Боня -->
+  <section class="min-h-screen section-contrast">
+    <div class="content-container text-center py-6 md:py-10">
+      <div class="mt-6 md:mt-10">
+        <img src="/assets/bonya.jpg" alt="Фото Бони" class="mx-auto rounded-lg shadow-lg h-60">
+      </div>
+
+      <blockquote class="section-text mt-10 md:mt-16 font-caveat">
+        Привет, это Боня. На правах их любимого хваостика - если вы вдруг подумаете подарить цветы, лучше порадуйте
+        меня.
+      </blockquote>
+      <blockquote class="section-text mt-4 font-caveat">
+        Чтобы вам было проще, я составила небольшой вишлист - обещаю всё попробовать лично и с большим энтузиазмом!
+      </blockquote>
+    </div>
+  </section>
 
   <!-- Форма -->
-  <section class="min-h-screen"></section>
+  <section class="min-h-screen section section-vertical">
+    <div class="content-continer text-center">
+      <h2 class="section-title">Вы придете?</h2>
+      <p class="section-subtitle">Если Вас не затруднит, заполните пожалуйста форму.</p>
+      <a href="#" class="action-button">Заполнить
+        форму</a>
+    </div>
+  </section>
 
   <script type="module" src="/src/main.ts"></script>
 </body>
