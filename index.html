@@ -8,18 +8,19 @@
   <title>Свадьба Ксюши и Максима</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Great+Vibes&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-
-  <header class="h-screen min-h-max flex items-center">
-    <div class="content-container text-center">
-      <div></div>
-      <div class="section-subtitle">22/08/2026</div>
-      <div class="font-semibold section-title text-6xl md:text-9xl text-pink-deep">Ксюша & Максим</div>
-      <div>
-        <img src="" alt="Фото Ксюши и Максима" class="min-h-60">
+  <header class="h-screen flex py-10">
+    <div class="content-container flex flex-col justify-between relative">
+      <img src="/hero.svg" class="w-10/12 -z-1 left-1/12 top-32 absolute opacity-80" alt="Фото Ксюши и Максима">
+      <img src="/top-ribbon.svg" alt="Верхняя лента" class="w-full">
+      <div class="text-center">
+        <div class="font-semibold section-title text-6xl md:text-9xl text-pink-deep">Ксюша & Максим</div>
+        <div class="section-subtitle">22/08/2026</div>
       </div>
     </div>
   </header>
@@ -116,7 +117,7 @@
   </section>
 
   <!-- Место (карта или фото) -->
-  <section class="section-contrast min-h-screen section section-vertical">
+  <section class="section-contrast min-h-screen section section-vertical relative bg-[url('/path.svg')] bg-no-repeat bg-bottom bg-size-[max(25%,500px)_auto]">
     <div class="content-container text-center">
       <h2 class="section-title">Место проведения</h2>
       <p class="mt-4 section-text">Наш праздник пройдет в шатре "Золотой фазан"<br>По адресу: улица Землячки, д. 92, к.
@@ -146,7 +147,7 @@
         <div>
           <div></div>
           <div class="timing-time">16:10</div>
-          <div class="timing-title">Праздничный банке</div>
+          <div class="timing-title">Праздничный банкет</div>
         </div>
         <div class="timing-line"></div>
         <div>
@@ -160,11 +161,12 @@
 
   <!-- Пожелания -->
 
-  <section class="min-h-screen section section-contrast">
+  <section class="min-h-screen section section-vertical section-contrast overflow-hidden relative" id="whishes">
     <div class="content-container text-center py-6 md:py-10">
       <h2 class="section-title">Пожелания</h2>
-      <p class="section-text mt-4">Ваши пожелания в конверте станут отличным подарком и помогут исполнить наши мечты.
+      <p class="section-text mt-4">Ваши пожелания в конверте станут лучшим подарком и помогут исполнить наши мечты.
       </p>
+      <img src="/envelope.svg" alt="Пожелания" class="w-60 mx-auto mt-16 flying-envelope origin-center">
     </div>
   </section>
 
@@ -178,30 +180,13 @@
         естественную и романтичную атмосферу дня.</p>
 
       <div class="flex items-center gap-x-1 justify-center mt-6">
-        <div class="rounded-full w-16 h-16 bg-[#fcc9dc]"></div>
-        <div class="rounded-full w-16 h-16 bg-[#fbe7b9]"></div>
-        <div class="rounded-full w-16 h-16 bg-[#d8eaa6]"></div>
-        <div class="rounded-full w-16 h-16 bg-[#689230]"></div>
+        <div class="rounded-full w-16 h-16 bg-[#ffd6da] pulsed-colors"></div>
+        <div class="rounded-full w-16 h-16 bg-[#efe1d4] pulsed-colors"></div>
+        <div class="rounded-full w-16 h-16 bg-[#ccd24a] pulsed-colors"></div>
+        <div class="rounded-full w-16 h-16 bg-[#748000] pulsed-colors"></div>
       </div>
 
-      <p class="section-text mt-6">Благодарим Вас за внимание к таким важным для нас деталям!</p>
-    </div>
-  </section>
-
-  <!-- Боня -->
-  <section class="min-h-screen section-contrast">
-    <div class="content-container text-center py-6 md:py-10">
-      <div class="mt-6 md:mt-10">
-        <img src="/assets/bonya.jpg" alt="Фото Бони" class="mx-auto rounded-lg shadow-lg h-60">
-      </div>
-
-      <blockquote class="section-text mt-10 md:mt-16 font-caveat">
-        Привет, это Боня. На правах их любимого хваостика - если вы вдруг подумаете подарить цветы, лучше порадуйте
-        меня.
-      </blockquote>
-      <blockquote class="section-text mt-4 font-caveat">
-        Чтобы вам было проще, я составила небольшой вишлист - обещаю всё попробовать лично и с большим энтузиазмом!
-      </blockquote>
+      <p class="section-text mt-6">Благодарим вас за внимание к таким важным для нас деталям!</p>
     </div>
   </section>
 
